@@ -5,7 +5,7 @@ phases:
         python: 3.9
   build:
     commands:
-      - sam validate
+      - sam validate -t packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
