@@ -14,4 +14,3 @@ artifacts:
   files:
     - packaged-template.yml
     - buildspec-validate.yml
-    - template.yml
