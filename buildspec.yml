@@ -6,11 +6,9 @@ phases:
   build:
     commands:
       - sam build
-      - sam package --template-file template.yml --s3-bucket $BUCKET --output-template-file packaged-template.yml
-      - ls
-      - pwd
-      - echo "$BUCKET"
+      - sam package --template-file template.yml --s3-bucket $BUCKET --output-template-file packaged-template.yml      
 artifacts:
   files:
     - packaged-template.yml
     - buildspec-validate.yml
+    
